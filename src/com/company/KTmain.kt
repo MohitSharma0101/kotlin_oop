@@ -7,9 +7,11 @@ fun main(){
   Cart.addMobile(mf.realme6())
   Cart.addMobile(mf.rn5pro())
   Cart.addMobile(mf.rn6pro())
-    Cart.getDetails(mf.rn6pro())
-    Cart.getDetails(mf.rn5pro())
-    Cart.checkout()
+
+    Cart.getDetails(mf.realmeX2())
+  Cart.addMobile(mf.realmeX2())
+  Cart.checkout()
+
 
 
 }

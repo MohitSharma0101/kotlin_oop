@@ -5,6 +5,7 @@ object Cart {
     var price = 0
     fun addMobile(mobile: Mobile) = list.add(mobile)
     fun checkout() {
+        println(" \nBill : \n")
         for(mobile in list){
             println("name: ${mobile.name()} \nprice: ${mobile.price()}")
             price += mobile.price()
