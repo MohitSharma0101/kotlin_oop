@@ -18,6 +18,10 @@ object Cart {
         println("name: ${mobile.name()} \nprice: ${mobile.price()} \ncamera: ${mobile.camera()} \nram: ${mobile.ram()} \nOS: ${mobile.OS()}")
     }
   fun setPaymentMethodAndCheckout(method: PaymentMethod) {
+      if(list.isEmpty()) {
+          println("\nCart is Empty")
+          return
+      }
       checkout()
       println("discount: ${method.discountPercentage*100}% ")
       val finalPrice = method.processPayment(price.toFloat())
